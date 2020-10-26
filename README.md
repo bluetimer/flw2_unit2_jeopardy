@@ -6,7 +6,7 @@ Below is the recommended order in which to complete the project.
 
 ## Day 1 - Rendering
 
-### render_categories.js
+### render_categories.js [done]
 
 1. Note the `categories` array at the top of the file. These are the category headers.
 2. Follow the instructions in the file and write code where it reads `// Add code here`
@@ -34,7 +34,7 @@ Below is the recommended order in which to complete the project.
 
 3. If done correctly, the following should be true:
 
-   1. Each question  block is clickable
+   1. Each question block is clickable
    2. On-click renders a popup like so:
 
    ![onclick](https://i.imgur.com/lUb4wOp.png)
@@ -42,6 +42,7 @@ Below is the recommended order in which to complete the project.
    3. Clicking "Show Answer" will show the answer like so:
 
    ![answer](https://i.imgur.com/bhvRj4s.png)
+
    4. Clicking "Close" will hide the modal and remove the question from the board like so:
 
    ![closed](https://i.imgur.com/IBIyhrJ.png)
@@ -74,10 +75,11 @@ Below is the recommended order in which to complete the project.
 
 The game of Jeopardy is usually played with time constraints.
 
-During the first two rounds, a contestant has *5 seconds* to respond to the question after ringing-in.
+During the first two rounds, a contestant has _5 seconds_ to respond to the question after ringing-in.
 
-In our Jeopardy game, we don't have the ability to ring-in, so we're going to give the player *10 seconds* to answer the question.
+In our Jeopardy game, we don't have the ability to ring-in, so we're going to give the player _10 seconds_ to answer the question.
 
 Here's how it should work:
+
 1. When the question is displayed, start a 10 second timer.
 1. When the time is up, automatically switch to the answer.
