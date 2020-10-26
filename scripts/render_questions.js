@@ -39,8 +39,7 @@ function renderQuestions() {
   for (let i = 0; i < numCategories; i++) {
     for (const VALUE of questionValues) {
       $("#questions").append(
-        "<div class='question'>" +
-          "<div class='question-title'>" +
+        "<div class='question'><div class='question-cell'>" +
           VALUE +
           "</div></div>"
       );
