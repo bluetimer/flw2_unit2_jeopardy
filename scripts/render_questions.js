@@ -7,20 +7,20 @@ let questionValues = [100, 200, 300, 400, 500];
  * 1. Loop over each category.
  *      HINT: Loop from 0 till numCategories using a for loop.
  *      Need more help? Check out https://mzl.la/2YSY7ud or ask a volunteer.
- *
+ *[done]
  * 2. Inside the category loop, loop over the `questionValues` array.
  *      HINT: Use a for/of loop
  *      Need more help? Check out https://mzl.la/3lDHxIq or ask a volunteer.
- *
+ *[done]
  * 3. Create an HTML string for each question. It should look like this:
  *      <div class='question'><div class='question-cell'>VALUE</div></div>
- *
+ *[done]
  * 4. Replace VALUE in each string with the question's value.
  *      For example, the $500 question would be:
  *          <div class='question'><div class='question-title'>$500</div></div>
  *      HINT: Use the + operator on a string and a variable to join them!
  *      Need more help? Check out https://bit.ly/2EIsD3b or ask a volunteer.
- *
+ *[done]
  * 5. Use jQUery's append function to add your HTML string to the #questions div.
  *      HINT: Use $(selector).append(html);
  *      Need more help? Check out https://api.jquery.com/append/ or ask a volunteer.
@@ -37,12 +37,16 @@ let questionValues = [100, 200, 300, 400, 500];
 function renderQuestions() {
   // Add code here
   for (let i = 0; i < numCategories; i++) {
-    for (const VALUE of questionValues) {
-      $("#questions").append(
-        "<div class='question'><div class='question-cell'>" +
-          VALUE +
-          "</div></div>"
-      );
+    let questionhtml = "<div class='questions-column'>";
+    for (let value of questionValues) {
+      questionhtml +=
+        "<div class=' question-cell' data-category='" +
+        i +
+        "'>$" +
+        value +
+        "</div>";
     }
+    questionhtml += "</div>";
+    $("#questions").append(questionhtml);
   }
 }

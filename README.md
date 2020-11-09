@@ -14,7 +14,7 @@ Below is the recommended order in which to complete the project.
 
 ![render_categories.js](https://i.imgur.com/l6J9OCh.png)
 
-### render_questions.js
+### render_questions.js [done]
 
 1. Note the `numCategories` and `questionValues` variables at the top of the file.
 2. Follow the instructions in the file and write code where it reads `// Add code here`

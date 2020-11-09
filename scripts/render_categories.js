@@ -34,11 +34,11 @@ let categories = [
  */
 function renderCategories() {
   // Add code here
+
   for (const element of categories) {
-    $("#categories").append(
-      "<div class='category'><div class='category-cell'>" +
-        element.toUpperCase() +
-        "</div></div>"
-    );
+    let categorieshtml = "<div class='category'>";
+    categorieshtml +=
+      "<div class='category-cell'>" + element.toUpperCase() + "</div></div>";
+    $("#categories").append(categorieshtml);
   }
 }
