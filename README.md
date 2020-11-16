@@ -22,7 +22,7 @@ Below is the recommended order in which to complete the project.
 
 ![render_questions](https://i.imgur.com/rpPcTHD.png)
 
-## Day 2 - Helper functions
+## Day 2 - Helper functions [done]
 
 ### click_handlers.js
 
