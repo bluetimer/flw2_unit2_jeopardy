@@ -1,5 +1,6 @@
 # Code Nation Fellowship 2 Unit 2 Project - Jeopardy
 Link: https://bluetimer.github.io/flw2_unit2_jeopardy/index.html
+
 Students will implement a Jeopardy game.
 
 Below is the recommended order in which to complete the project.
