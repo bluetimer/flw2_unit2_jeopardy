@@ -14,6 +14,7 @@
  *      HINT: Use the `hide()` and `show()` methods in jQUery;
  *      Need more help? Check out https://api.jquery.com/ or ask a volunteer.
  */
+var isCanceled = false;
 
 function renderScoringButtons() {
   // Add code here
